@@ -12,9 +12,10 @@ class AddressState(object):
     """
     Every address that has interacted with the QRL network has its own
     AddressState. This is not synced between peers, but instead it is calculated
-    internally by each node as it verifies blocks. If the address has never
-    interacted with the network before, its default state is taken from
-    get_default().
+    internally by each node as it verifies blocks. 
+    
+    If the address has not    interacted with the network, its default state is 
+    taken from get_default().
 
     If a Transaction was dropped by a node for whatever reason and not included
     in a block, the ots_bitfield that the network maintains may be different
