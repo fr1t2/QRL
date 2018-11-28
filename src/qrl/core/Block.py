@@ -17,7 +17,7 @@ from qrl.generated import qrl_pb2
 
 class Block(object):
     """
-    Blocks are, like many other classes in QRL, hydrated from Protobuf messages.
+    Blocks are hydrated from Protobuf messages.
     They contain a BlockHeader instance, which does the actual hash calculation.
     """
     def __init__(self, protobuf_block=None):
